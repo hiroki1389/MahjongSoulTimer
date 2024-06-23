@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/player1Layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/pauseButton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="-70dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toLeftOf="@+id/turnButton"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/player1Timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-20dp"
+            android:gravity="center"
+            android:text="Player 1 Timer\n20"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pauseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/turnButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:text="Pause"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/turnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="End Turn"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/player2Layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/pauseButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="-70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/turnButton"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/player2Timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-20dp"
+            android:gravity="center"
+            android:text="Player 2 Timer\n20"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
