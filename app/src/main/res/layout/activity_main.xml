@@ -37,7 +37,7 @@
         android:layout_above="@+id/turnButton"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="80dp"
-        android:text="Pause"
+        android:text="PAUSE"
         android:textSize="20sp" />
 
     <Button
@@ -47,7 +47,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
-        android:text="End Turn"
+        android:text="CHANGE TURN"
         android:textSize="20sp" />
 
     <LinearLayout
