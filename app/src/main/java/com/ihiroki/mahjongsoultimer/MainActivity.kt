@@ -175,6 +175,10 @@ class MainActivity : AppCompatActivity() {
         gamePaused = false
         isEnded = false
 
+        // 黒色に戻す
+        player1TimerView.setTextColor(Color.BLACK)
+        player2TimerView.setTextColor(Color.BLACK)
+
         startTurnTimer()
     }
 
