@@ -127,8 +127,8 @@ class MainActivity : AppCompatActivity() {
                 // タイマーが終了したら呼び出される
                 override fun onFinish() {
                     isEnded = true
-                    if (currentPlayer == 1) player1TimerView.text = "Player 1 Lose"
-                    else player2TimerView.text = "Player 2 Lose"
+                    if (currentPlayer == 1) player1TimerView.text = "You Lose !!!"
+                    else player2TimerView.text = "You Lose !!!"
 
                     turnButton.text = "RESTART"
 
@@ -178,6 +178,9 @@ class MainActivity : AppCompatActivity() {
         // 黒色に戻す
         player1TimerView.setTextColor(Color.BLACK)
         player2TimerView.setTextColor(Color.BLACK)
+
+        // テキストを戻す
+        turnButton.text = "CHANGE TURN"
 
         startTurnTimer()
     }
